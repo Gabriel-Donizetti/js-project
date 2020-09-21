@@ -1,23 +1,15 @@
 <html>
-    <head>
-        <meta charset="UTF-8"/>
 
-    </head>
-    <body>
-        <div id="app">
-            <button id="botao" >Criar Quadrado</button>
-        </div>
-        <script>        
-            var botaoElement = document.querySelector('#botao')
-            botaoElement.onclick = function(){
-                var divElement = document.createElement("div");
-                divElement.style.width = 100;
-                divElement.style.height = 100;
-                divElement.style.backgroundColor = '#f00';
+<head>
+    <meta charset="UTF-8" />
+</head>
 
-                var containerElement = document.querySelector('#app');
-                containerElement.appendChild(divElement);
-            }
-        </script>
-    </body>
+<body>
+    <div id="app">
+        <button id="botao">Criar Quadrado</button>
+        <div class="squares"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
 </html>
