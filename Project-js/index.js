@@ -1,5 +1,6 @@
 var ulElement = document.createElement('ul');
 var liElement = document.createElement('li');
+
 var removeElement = document.createElement('button');
 var inputElement = document.querySelector('.input');
 // removeElement.setAttribute('value','Remove');
@@ -10,6 +11,8 @@ buttonElement.onclick = function addTodo() {
     // var inputElement = document.querySelector('.input');
     var liText = document.createTextNode(inputElement.value);
     
+    var liElement = document.createElement('li');
+    
     liElement.appendChild(liText);
     liElement.appendChild(removeElement);
     ulElement.appendChild(liElement);
@@ -18,7 +21,7 @@ buttonElement.onclick = function addTodo() {
 }
 
 removeElement.onclick = function removeTodo(){
-    ulElement.removeChild(liElement);
+    divElement.removeChild(ulElement);
 }
 
 var divElement = document.querySelector('#list');
