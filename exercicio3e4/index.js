@@ -9,6 +9,8 @@ botaoElement.onclick = function createText(){
     liElement.appendChild(liText);
     ulElement.appendChild(liElement);
 
+    inputElment.value = '';
+
 }
 
 
