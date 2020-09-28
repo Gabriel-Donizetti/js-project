@@ -1,16 +1,20 @@
 var buttonElement = document.querySelector('#button');
 var inputElement = document.querySelector('#input');
+var removeButton = document.createElement('button');
+removeButton.value = 'Remove';
 
 buttonElement.onclick = function createTask(){
-    var liElement = document.createElement('li');
-    liElement.style.textDecoration = none;
+    var divTaskElement = document.createElement('div');
     var text = document.createTextNode(inputElement.value);
 
-    liElement.appendChild(text);
-    console.log(text);
-    var divElement = document.querySelector('#content');
-    divElement.appendChild(liElement);
+    divTaskElement.appendChild(text);
+    divTaskElement.appendChild(removeButton);
+
+    var divElement = document.querySelector('#task');
+    divElement.appendChild(divTaskElement);
     console.log(divElement);
+    console.log(divTaskElement);
 
     inputElement.value = '';
 }
+
