@@ -73,3 +73,23 @@ body{
   display: flexbox;
   font-family:Gill Sans, sans-serif ;
 }
+
+
+
+/*JS CSS*/
+.remove{
+  text-align: left;
+  border-radius: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #836FFF;
+  transition-duration: 0.4s;
+  letter-spacing: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.remove:hover{
+  background-color: #836FFF; 
+  color: white;
+}
