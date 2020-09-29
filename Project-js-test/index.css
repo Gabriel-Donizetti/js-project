@@ -1,9 +1,9 @@
 body{
-  background-color: #DCDCDC;
+  background-color: #4F4F4F;
 }
 /*HEADER*/
 #header{
-  background-color:	#836FFF ;
+  background-color:	#808080 ;
   display: flexbox;
   position: absolute ;
   top: 0px;
@@ -45,7 +45,7 @@ body{
   border-radius: 10%;
   background-color: #ffffff;
   color: #000000;
-  border: 2px solid #836FFF;
+  border: 2px solid #808080;
   transition-duration: 0.4s;
   letter-spacing: 3px;
   font-size: 13pt;
@@ -53,13 +53,15 @@ body{
 }
 
 #button:hover{
-  background-color: #836FFF; 
+  background-color: #808080; 
   color: white;
 
 }
 
 #input{
-  border: none; 
+  border: none;
+  width: 20px;
+  height: 22px;
 }
 
 /*FOOTER*/
@@ -69,7 +71,7 @@ body{
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color:	#836FFF ;
+  background-color:	#808080 ;
   display: flexbox;
   font-family:Gill Sans, sans-serif ;
 }
@@ -80,7 +82,7 @@ body{
   border-radius: 100%;
   background-color: #ffffff;
   color: #000000;
-  border: 2px solid #836FFF;
+  border: 2px solid teal;
   transition-duration: 0.4s;
   letter-spacing: 3px;
   width: 20px;
@@ -88,6 +90,17 @@ body{
 }
 
 .remove:hover{
-  background-color: #836FFF; 
+  background-color: teal; 
   color: white;
+}
+
+.div{
+  width: 150px;
+  height: 200px;
+  background-color: #2F4F4F;
+}
+
+.headerDiv{
+  height: flex;
+  background-color: teal;
 }
