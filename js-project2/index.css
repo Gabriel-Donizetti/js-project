@@ -1,11 +1,12 @@
 body{
-
+  background-color: white;
 }
 
 #header{
   text-decoration: none;
   height: 20px;
   width: 100%;
+  display: flexbox;
 }
 
 #footer{ 
