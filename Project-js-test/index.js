@@ -1,15 +1,20 @@
+/*GLOBAL VAR'S' */
 var buttonElement = document.querySelector('#button');
 var inputElement = document.querySelector('#input');
 
+/*ANIMATIONS*/
 inputElement.onmouseover = function(){
     inputElement.style.width = '150px';
     inputElement.style.transitionDuration = '0.7s';
 }
 inputElement.onmouseout = function(){
     inputElement.style.width = '20px';
-    inputElement.style.transitionDuration = '0.7s';
+    inputElement.style.transitionDuration = '3s';
 }
 
+
+
+/*CREATE ELEMENTS*/
 buttonElement.onclick = function createTask(){
     var divTaskElement = document.createElement('div');
     divTaskElement.setAttribute('class', 'div');
@@ -29,12 +34,9 @@ buttonElement.onclick = function createTask(){
 
     var divElement = document.querySelector('#task');
     divElement.appendChild(divTaskElement);
-    console.log(divElement);
-    console.log(divTaskElement);
 
     inputElement.value = '';
 }
-
 
 function renderElements(){
 

@@ -1,93 +1,30 @@
 body{
-  background-color: #DCDCDC;
+
 }
-/*HEADER*/
+
 #header{
-  background-color:	#836FFF ;
-  display: flexbox;
-  position: absolute ;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  font-size: 14pt;
-  font-family:Gill Sans, sans-serif 
-}
-
-#header a{
-  margin: 10px;
-  letter-spacing: 3px;
-  border-radius: 10%;
-  color: black;
   text-decoration: none;
-  transition-duration: 0.4s;
+  height: 20px;
+  width: 100%;
 }
 
-#header a:hover{
-  background-color: #ffffff; 
-  color: black;
-}
-
-/*CONTENT*/
-#content{
-  position: relative;
-  margin-top: 30px;
-  text-align: center;
-
-}
-#task{
-  position: relative;
-  margin-top: 30px;
-  text-align: center;
-
-}
-
-#button{
-  border-radius: 10%;
-  background-color: #ffffff;
-  color: #000000;
-  border: 2px solid #836FFF;
-  transition-duration: 0.4s;
-  letter-spacing: 3px;
-  font-size: 13pt;
-  font-family:Gill Sans, sans-serif 
-}
-
-#button:hover{
-  background-color: #836FFF; 
-  color: white;
-
-}
-
-#input{
-  border: none; 
-}
-
-/*FOOTER*/
-#footer{
+#footer{ 
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color:	#836FFF ;
   display: flexbox;
-  font-family:Gill Sans, sans-serif ;
 }
 
-/*JS CSS*/
-.remove{
-  text-align: left;
+#button{
+  position: fixed;
+  bottom: 15%;
+  right: 5%;
+}
+
+#addTask{
+  position: static;
+  height: 60px;
+  width: 60px;
   border-radius: 100%;
-  background-color: #ffffff;
-  color: #000000;
-  border: 2px solid #836FFF;
-  transition-duration: 0.4s;
-  letter-spacing: 3px;
-  width: 20px;
-  height: 20px;
-}
-
-.remove:hover{
-  background-color: #836FFF; 
-  color: white;
 }
